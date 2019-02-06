@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body
+		{
+			background-color: #8bc34a;
+
+		}
+		#semibg
+		{
+			background-color: #3c94b0;
+	        margin-left: 275px;
+	        margin-top: 75px;
+			width: 800px;
+			height: 500px;
+			border: 10px #39869e solid;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+		}
+		#title
+		{
+			color: white;
+			font-weight: bolder;
+			top: 40px;
+			left: 300px;
+			position: absolute;
+			font-size: 50px;
+			text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+			font-family: Aharoni;
+			user-select: none;
+		}
+		#output
+		{
+			color: white;
+			font-weight: bolder;
+			top: 250px;
+			left: 425px;
+			position: absolute;
+			font-size: 75px;
+			text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+			font-family: Aharoni;
+			user-select: none;
+			alignment-baseline: central;
+
+		}
+	</style>
+	<title>Key Code FINDER</title>
+</head>
+<body>
+	<div id="semibg"></div>
+	<p id="title"> Key Code FINDER </p>
+
+	<p id="output">KeyCode: -----</p>
+
+	<script type="text/javascript">
+		
+		window.addEventListener("keydown", keydown, false);
+		window.addEventListener()
+
+		function keydown(event) {
+
+			console.log(event.keyCode)
+			document.querySelector("#output").innerHTML = "KeyCode: " + event.keyCode
+			
+		}
+	</script>
+
+
+</body>
+</html>
