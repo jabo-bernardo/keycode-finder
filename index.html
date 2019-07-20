@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Sleep Needs Calculator</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="header">
+            <p class="txt_title">Jabo | Sleep Needs Calculator</p>
+        </div>
+        <div class="content">
+            <div class="information">
+                <p class="txt_header">
+                    Why sleep is so important?
+                </p>
+                <p class="txt_description">
+                    The quality of your sleep directly affects your mental and physical health and the quality of your waking life, including your productivity, emotional balance, brain and heart health, immune system, creativity, vitality, and even your weight. No other activity delivers so many benefits with so little effort!
+                </p>
+            </div>
+            <div class="app">
+                <table>
+                    <tr>
+                        <td><label>Hours you slept: </label></td>
+                        <td><input id='hours-slept' type=number></td>
+                    </tr>
+                    <tr>
+                        <td><label>Age: </label></td>
+                        <td><input id='age' type=number></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button onclick="getResult()">GET RESULT</button></td>
+                        <td id="result"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="srcs">
+            <p>Sources: <a href="https://www.helpguide.org/articles/sleep/sleep-needs-get-the-sleep-you-need.htm">Help Guide Org</a></p>
+            <p>Github: <a href="https://github.com/jabo-bernardo">jabo_bernardo</a></p>
+            <p>Twitter: <a href="https://twitter.com/jabo_bernardo">jabo_bernardo</a></p>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
